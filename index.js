@@ -74,7 +74,6 @@ function hashTable(sortedArray)
     var key = current
     hash[i] = {[key]: current}
   }
-  console.log(hash)
   return hash
 }
 
