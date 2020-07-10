@@ -56,7 +56,6 @@ function hashTwoSum(array, sum)
   {
     let numOne = sortedArray[i]
     let missingNum = sum - sortedArray[i]
-    console.log(hash.missingNum);
     if(sortedArray[i] < sum && hash[`${missingNum}`])
     {
       solutions.push([sortedArray[i], missingNum])
