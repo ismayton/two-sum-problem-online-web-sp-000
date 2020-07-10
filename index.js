@@ -57,11 +57,7 @@ function hashTwoSum(array, sum)
     let numOne = sortedArray[i]
     let missingNum = sum - sortedArray[i]
     console.log(hash.missingNum);
-    if(sortedArray[i] > sum - 1)
-    {
-      sortedArray.splice(i, array.length)
-    }
-    else if(hash[`${missingNum}`])
+    if(sortedArray[i] < sum && hash[`${missingNum}`])
     {
       solutions.push([sortedArray[i], missingNum])
       sortedArray.splice(i, 1)
